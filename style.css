@@ -1,0 +1,174 @@
+
+/* BASIC + RESPONSIVE MAGICPIN STUDENT CLONE CSS */
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#ffffff;
+}
+
+/* NAVBAR */
+header{
+    background:#3b0bbf;
+    color:white;
+    padding:10px 0;
+}
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 15px;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+    margin:0;
+}
+nav ul li{
+    cursor:pointer;
+}
+
+/* HIDE NAV LINKS ON SMALL SCREENS */
+@media(max-width:700px){
+    nav ul{
+        display:none;
+    }
+}
+
+/* HERO SECTION */
+.hero{
+    background:#3b0bbf;
+    color:white;
+    text-align:center;
+    padding:50px 20px 140px 20px;
+    position:relative;
+}
+.hero h1{
+    margin:0 0 20px 0;
+    font-size:28px;
+}
+@media(max-width:500px){
+    .hero h1{
+        font-size:22px;
+    }
+}
+
+.search-box{
+    background:white;
+    max-width:900px;
+    margin:auto;
+    padding:10px;
+    border-radius:40px;
+    display:flex;
+    gap:10px;
+    box-shadow:0px 4px 15px rgba(0,0,0,0.3);
+}
+.search-left{
+    border-right:1px solid #ccc;
+    padding:10px;
+    font-size:14px;
+    color:#444;
+}
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    font-size:16px;
+}
+
+@media(max-width:600px){
+    .search-left{
+        display:none;
+    }
+}
+
+/* WHITE CURVE */
+.white-curve{
+    width:100%;
+    height:60px;
+    background:white;
+    position:absolute;
+    bottom:-1px;
+    left:0;
+    border-radius:50% 50% 0 0;
+}
+
+/* CATEGORY SECTION */
+.categories{
+    max-width:1200px;
+    margin:-50px auto 20px auto;
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding:0 15px 20px 15px;
+}
+.cat-card{
+    background:white;
+    min-width:180px;
+    border-radius:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    padding:10px;
+}
+.cat-card img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* STACK CARDS ON SMALLER SCREENS */
+@media(max-width:500px){
+    .cat-card{
+        min-width:150px;
+    }
+}
+
+/* BANNER SECTION */
+.banner-box{
+    max-width:1200px;
+    margin:20px auto;
+    padding:0 15px;
+}
+.banner-box img{
+    width:100%;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+footer{
+    background:#222;
+    color:white;
+    padding:40px 20px;
+    margin-top:40px;
+}
+.footer-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+/* FOOTER STACKS ON MOBILE */
+@media(max-width:700px){
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media(max-width:450px){
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+footer ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+footer ul li{
+    margin-bottom:8px;
+    color:#ccc;
+}
